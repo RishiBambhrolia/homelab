@@ -5,61 +5,90 @@
 @import "jekyll-theme-minimal";
 
 /* ==========================================================================
-   CLAIR OBSCUR: EXPEDITION 33 CINEMATIC UI OVERRIDES
+   CLAIR OBSCUR: EXPEDITION 33 CINEMATIC UI OVERRIDES (TOP/BOTTOM LAYOUT)
    ========================================================================== */
 
-/* 1. The Canvas (Velvety Midnight-Oil Contrast) */
+/* 1. The Canvas */
 body {
   background-color: #0B0C0E !important; /* Pure cinematic obsidian pitch black */
-  color: #E2DCD3 !important;           /* Luxurious, high-contrast Belle Époque ivory */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* Clean modern serif/sans baseline */
+  color: #E2DCD3 !important;           /* Luxurious, high-contrast ivory */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   letter-spacing: 0.02em !important;
   line-height: 1.7 !important;
 }
 
-/* 2. Main Container Constraint */
+/* 2. Break the Side-by-Side Grid Layout entirely */
 .wrapper {
   background-color: #0B0C0E !important;
   max-width: 850px !important;
   padding: 40px 20px !important;
+  display: block !important; /* Forces vertical block stacking instead of side-by-side grid */
 }
 
-/* 3. The Left Sidebar (Fine Horology Details) */
+/* 3. Transform Sidebar into a Clean Top Header Panel */
 header {
-  border-right: 1px solid rgba(226, 220, 211, 0.1) !important; /* Delicate structural boundary line */
-  padding-right: 40px !important;
+  width: 100% !important;
+  float: none !important;
+  position: static !important;
+  border-right: none !important; /* Kill the vertical side line */
+  border-bottom: 1px solid rgba(226, 220, 211, 0.15) !important; /* Add crisp horizontal boundary line */
+  padding-bottom: 20px !important;
+  margin-bottom: 30px !important;
 
   h1 a {
     color: #FFFFFF !important;
-    font-weight: 300 !important; /* Clean, lightweight premium branding */
+    font-weight: 300 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.25em !important; /* Expansive UI typography */
-    font-size: 1.6rem !important;
+    letter-spacing: 0.25em !important;
+    font-size: 1.8rem !important;
   }
 
   p {
-    color: #8C867E !important; /* Muted stone grey subtitle text */
-    font-size: 0.75rem !important;
+    color: #8C867E !important;
+    font-size: 0.8rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.15em !important;
-    margin-top: 10px !important;
+    margin-top: 5px !important;
+  }
+
+  ul {
+    display: none !important; /* Hides the duplicate GitHub download buttons to keep it elegant */
   }
 }
 
-/* 4. Elegant Mechanical Headers */
+/* 4. Center Section Container Configuration */
+section {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+/* 5. Transform Footer into Bottom Block */
+footer {
+  width: 100% !important;
+  float: none !important;
+  position: static !important;
+  margin-top: 60px !important;
+  padding-top: 20px !important;
+  border-top: 1px solid rgba(226, 220, 211, 0.1) !important;
+  color: #8C867E !important;
+  font-size: 0.75rem !important;
+}
+
+/* 6. Elegant Mechanical Headers */
 h1, h2, h3, h4 {
   color: #FFFFFF !important;
   font-weight: 400 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.18em !important;
-  border-bottom: 1px solid rgba(226, 220, 211, 0.15) !important;
+  border-bottom: 1px solid rgba(226, 220, 211, 0.1) !important;
   padding-bottom: 0.4em !important;
   margin-top: 2.2em !important;
 }
 
 h1 {
   font-size: 1.75rem !important;
-  border-bottom: 1px solid #E2DCD3 !important; /* Crisp Ivory underline highlight */
+  border-bottom: 1px solid #E2DCD3 !important;
 }
 
 h2 {
@@ -67,24 +96,22 @@ h2 {
   color: #E2DCD3 !important;
 }
 
-/* 5. Fluid Interaction Anchors (Chronograph Accents) */
+/* 7. Interaction Links */
 a {
-  color: #C5A880 !important; /* Sophisticated watchmaker gold/champagne tone */
+  color: #C5A880 !important; /* Watchmaker champagne gold tone */
   text-decoration: none !important;
   letter-spacing: 0.05em !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  display: inline-block;
+  transition: all 0.2s ease !important;
 }
 
 a:hover {
-  color: #FFFFFF !important; 
-  transform: translateX(3px); /* Subtle tactical UI slide effect on hover */
+  color: #FFFFFF !important;
 }
 
-/* 6. Refined Technical Monospace Code Logs */
+/* 8. Code Blocks */
 code {
   font-family: "SF Mono", Consolas, monospace !important;
-  background-color: #121417 !important; /* Isolated contrasting dark slate */
+  background-color: #121417 !important;
   color: #E2DCD3 !important;
   padding: 0.2em 0.5em !important;
   border-radius: 3px !important;
@@ -97,18 +124,16 @@ pre {
   border: 1px solid rgba(226, 220, 211, 0.1) !important;
   border-radius: 4px !important;
   padding: 18px !important;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
 
   code {
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
-    font-size: 0.9em !important;
     color: #E2DCD3 !important;
   }
 }
 
-/* 7. Fine UI Structural Accents */
+/* 9. Layout Accents */
 .section-divider {
   display: flex;
   align-items: center;
@@ -129,46 +154,8 @@ pre {
 .tech-note {
   background-color: #121417 !important;
   border: 1px solid rgba(226, 220, 211, 0.1) !important;
-  border-left: 2px solid #C5A880 !important; /* Premium gold accent bar */
+  border-left: 2px solid #C5A880 !important;
   padding: 20px;
   border-radius: 4px;
   margin: 2.5rem 0;
-  
-  .note-label {
-    color: #C5A880;
-    font-size: 0.7rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-  }
-  
-  p {
-    margin: 0 !important;
-    font-size: 0.85rem;
-    color: #8C867E;
-  }
-}
-
-blockquote {
-  border-left: 2px solid #E2DCD3 !important;
-  background-color: #121417 !important;
-  margin: 2e 0 !important;
-  padding: 15px 20px !important;
-  color: #8C867E !important;
-  font-style: italic;
-}
-
-ul, ol {
-  padding-left: 24px !important;
-}
-
-li {
-  margin-bottom: 0.6em !important;
-}
-
-strong {
-  color: #FFFFFF !important;
-  font-weight: 600 !important;
 }
