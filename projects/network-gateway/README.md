@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Pihole-WireGuard"
+---
+
 # Project Implementation: Secure Remote Gateway & DNS Sinkhole
 
 This project details the architectural deployment of an isolated homelab remote gateway and centralized DNS sinkhole. It provides a secure, encrypted tunnel to connect to my local lab network from public environments while enforcing network-wide ad-blocking and DNS auditing.

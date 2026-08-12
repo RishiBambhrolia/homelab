@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Homepage"
+---
+
 # Systems Engineering & Cybersecurity Homelab Projects
 
 Welcome to my central homelab projects. This repository serves as a functional blueprint and architectural diary documenting the systems, networking protocols, and security controls running inside my private hypervisor environment.

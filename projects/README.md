@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Projects"
+---
+
 # Project Index
 
 Welcome to my active projects. Please select a project below to view the architectural breakdown, configuration, and implementation details:

@@ -75,7 +75,13 @@ footer {
   font-size: 0.75rem !important;
 }
 
-/* 6. Elegant Mechanical Headers */
+/* 6. Bold Text Overrides (Fixes the dark charcoal text invisibility) */
+strong, b {
+  color: #E2DCD3 !important;       /* Shifts bold labels to crisp matching ivory */
+  font-weight: 700 !important;
+}
+
+/* 7. Elegant Mechanical Headers */
 h1, h2, h3, h4 {
   color: #FFFFFF !important;
   font-weight: 400 !important;
@@ -96,7 +102,7 @@ h2 {
   color: #E2DCD3 !important;
 }
 
-/* 7. Interaction Links */
+/* 8. Interaction Links */
 a {
   color: #C5A880 !important; /* Watchmaker champagne gold tone */
   text-decoration: none !important;
@@ -108,7 +114,7 @@ a:hover {
   color: #FFFFFF !important;
 }
 
-/* 8. Code Blocks */
+/* 9. Code Blocks */
 code {
   font-family: "SF Mono", Consolas, monospace !important;
   background-color: #121417 !important;
@@ -131,31 +137,4 @@ pre {
     padding: 0 !important;
     color: #E2DCD3 !important;
   }
-}
-
-/* 9. Layout Accents */
-.section-divider {
-  display: flex;
-  align-items: center;
-  margin: 3rem 0 2rem 0;
-  color: #8C867E;
-  font-size: 0.65rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  
-  &::after {
-    content: "";
-    flex: 1;
-    margin-left: 1.5rem;
-    border-bottom: 1px solid rgba(226, 220, 211, 0.08);
-  }
-}
-
-.tech-note {
-  background-color: #121417 !important;
-  border: 1px solid rgba(226, 220, 211, 0.1) !important;
-  border-left: 2px solid #C5A880 !important;
-  padding: 20px;
-  border-radius: 4px;
-  margin: 2.5rem 0;
 }

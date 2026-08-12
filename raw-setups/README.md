@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Raw Setups"
+---
+
 # Raw Setup Index
 
 These are general setups for systems and software used in projects that can be used again if needed:
