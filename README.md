@@ -1,6 +1,6 @@
 # Systems Engineering & Cybersecurity Homelab Projects
 
-Welcome to my central homelab Projects. This repository serves as a functional blueprint and architectural diary documenting the systems, networking protocols, and security controls running inside my private hypervisor environment.
+Welcome to my central homelab projects. This repository serves as a functional blueprint and architectural diary documenting the systems, networking protocols, and security controls running inside my private hypervisor environment.
 
 ## Core Infrastructure Overview
 * **Hypervisor Platform:** Dedicated Proxmox VE node (6-core architecture) managing micro-segmented LXCs and full virtual machines.
