@@ -26,5 +26,4 @@ title: "Pi-hole Setup"
 3. Navigate to **Settings** -> **DNS** tab.
 4. Under Interface Settings, enable **Respond only on interface eth0**. *(Note: This is safe because the Pi-hole is protected within your internal private network gateway, not exposed to the public cloud)*.
 
-### Here is the link to go back to the Raw Setups page:
-* [Browse All General Raw Setups for Future Projects](./raw-setups/README.md)
+[← Back to Raw Setups Index](./)
