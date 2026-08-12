@@ -1,45 +1,40 @@
 ---
 ---
-/* Import the baseline layout structural framework */
-@import "jekyll-theme-minimal";
 
 /* ==========================================================================
-   CLAIR OBSCUR: EXPEDITION 33 CINEMATIC UI OVERRIDES (TOP/BOTTOM LAYOUT)
+   CLAIR OBSCUR: STANDALONE CINEMATIC SYSTEM UI
    ========================================================================== */
 
-/* 1. The Canvas */
 body {
-  background-color: #0B0C0E !important; /* Pure cinematic obsidian pitch black */
-  color: #E2DCD3 !important;           /* Luxurious, high-contrast ivory */
+  background-color: #0B0C0E !important; 
+  color: #E2DCD3 !important;           
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   letter-spacing: 0.02em !important;
   line-height: 1.7 !important;
+  margin: 0;
+  padding: 0;
 }
 
-/* 2. Break the Side-by-Side Grid Layout entirely */
 .wrapper {
   background-color: #0B0C0E !important;
   max-width: 850px !important;
   padding: 40px 20px !important;
-  display: block !important; /* Forces vertical block stacking instead of side-by-side grid */
+  margin: 0 auto !important;
+  display: block !important; 
 }
 
-/* 3. Transform Sidebar into a Clean Top Header Panel */
 header {
   width: 100% !important;
-  float: none !important;
-  position: static !important;
-  border-right: none !important; /* Kill the vertical side line */
-  border-bottom: 1px solid rgba(226, 220, 211, 0.15) !important; /* Add crisp horizontal boundary line */
+  border-bottom: 1px solid rgba(226, 220, 211, 0.15) !important; 
   padding-bottom: 20px !important;
   margin-bottom: 30px !important;
 
   h1 a {
     color: #FFFFFF !important;
-    font-weight: 300 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.25em !important;
     font-size: 1.8rem !important;
+    text-decoration: none !important;
   }
 
   p {
@@ -51,22 +46,17 @@ header {
   }
 
   ul {
-    display: none !important; /* Hides the duplicate GitHub download buttons to keep it elegant */
+    display: none !important; 
   }
 }
 
-/* 4. Center Section Container Configuration */
 section {
   width: 100% !important;
-  float: none !important;
   padding: 0 !important;
 }
 
-/* 5. Transform Footer into Bottom Block */
 footer {
   width: 100% !important;
-  float: none !important;
-  position: static !important;
   margin-top: 60px !important;
   padding-top: 20px !important;
   border-top: 1px solid rgba(226, 220, 211, 0.1) !important;
@@ -74,13 +64,12 @@ footer {
   font-size: 0.75rem !important;
 }
 
-/* 6. Bold Text Overrides (Fixes the dark charcoal text invisibility) */
+/* Bold Visibility Settings */
 strong, b {
-  color: #E2DCD3 !important;       /* Shifts bold labels to crisp matching ivory */
+  color: #E2DCD3 !important;       
   font-weight: 700 !important;
 }
 
-/* 7. Elegant Mechanical Headers */
 h1, h2, h3, h4 {
   color: #FFFFFF !important;
   font-weight: 400 !important;
@@ -101,9 +90,8 @@ h2 {
   color: #E2DCD3 !important;
 }
 
-/* 8. Interaction Links */
 a {
-  color: #C5A880 !important; /* Watchmaker champagne gold tone */
+  color: #C5A880 !important; 
   text-decoration: none !important;
   letter-spacing: 0.05em !important;
   transition: all 0.2s ease !important;
@@ -113,7 +101,6 @@ a:hover {
   color: #FFFFFF !important;
 }
 
-/* 9. Code Blocks */
 code {
   font-family: "SF Mono", Consolas, monospace !important;
   background-color: #121417 !important;
@@ -129,11 +116,30 @@ pre {
   border: 1px solid rgba(226, 220, 211, 0.1) !important;
   border-radius: 4px !important;
   padding: 18px !important;
+  overflow-x: auto;
 
   code {
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
     color: #E2DCD3 !important;
+  }
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 2rem 0;
+  color: #8C867E;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  border: none !important;
+  
+  &::after {
+    content: "";
+    flex: 1;
+    margin-left: 1.5rem;
+    border-bottom: 1px solid rgba(226, 220, 211, 0.08);
   }
 }
