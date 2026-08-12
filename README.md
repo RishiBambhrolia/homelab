@@ -11,7 +11,8 @@ Welcome to my central homelab projects. This repository serves as a functional b
 
 ## Active Projects
 
-### Here is the link to my active projects:
+### Projects List:
+Here is the list of all of my projects
 * **Documentation Link:** [Browse All Active Projects](./projects/README.md)
 
 ---

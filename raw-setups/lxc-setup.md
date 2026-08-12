@@ -31,4 +31,4 @@ title: "Proxmox LXC Setup"
 3. Save (`Ctrl + O` -> `Enter` -> `Ctrl + X`) and restart the service: `systemctl restart ssh`.
 4. Install OpenSSH server if missing: `apt update && apt install -y openssh-server`.
 
-[← Back to Raw Setups Index](./)
+[← Back to Raw Setups](./)

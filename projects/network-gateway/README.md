@@ -9,9 +9,9 @@ This project details the architectural deployment of an isolated homelab remote 
 
 ## Global Setup References
 To maintain documentation modularity, the foundational installation steps are drawn from my global wiki repository:
-* [General Proxmox LXC Setup Guide](../raw-steps/lxc-setup.html)
-* [General Pi-hole Installation Guide](../raw-steps/pihole-setup.html)
-* [General WireGuard Installation Guide](../raw-steps/wireguard-setup.html)
+* [General Proxmox LXC Setup Guide](../../raw-steps/lxc-setup.html)
+* [General Pi-hole Installation Guide](../../raw-steps/pihole-setup.html)
+* [General WireGuard Installation Guide](../../raw-steps/wireguard-setup.html)
 
 ## Project-Specific Modifications & Hypervisor Tweaks
 
@@ -36,7 +36,4 @@ To allow inbound external handshakes to reach the WireGuard server LXC container
 ## Infrastructure Verification
 Log into the WireGuard container and run `wg show` to verify active connection timers and real-time data handshakes.
 
-### Here is the link to go back to my projects:
-* **Documentation Link:** [Browse All Active Projects](./projects/README.html)
-
-[← Back to Projects Index](./)
+[← Back to Projects](./)
