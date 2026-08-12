@@ -30,3 +30,6 @@ title: "Proxmox LXC Setup"
 2. Locate `#PermitRootLogin prohibit-password`, remove the `#`, and change the value to `yes`.
 3. Save (`Ctrl + O` -> `Enter` -> `Ctrl + X`) and restart the service: `systemctl restart ssh`.
 4. Install OpenSSH server if missing: `apt update && apt install -y openssh-server`.
+
+### Here is the link to go back to the Raw Setups page:
+* [Browse All General Raw Setups for Future Projects](./raw-setups/README.md)

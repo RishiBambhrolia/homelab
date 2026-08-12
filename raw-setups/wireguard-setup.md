@@ -19,3 +19,6 @@ title: "WireGuard Setup"
 * **Adding Profiles:** Re-run `./wireguard-install.sh` at any time to add new devices.
 * **Mobile Devices:** Scan the generated terminal QR code via the WireGuard mobile app. Test functionality by disabling Wi-Fi and checking the active handshake timer (`wg show`).
 * **PC Devices:** Use `cat profile_name.conf` to display the config, copy it, and paste it into "Add Empty Tunnel" inside the desktop WireGuard app. Adjust the **AllowedIPs** line to specify your exact home network subnet and VPN pool ranges.
+
+### Here is the link to go back to the Raw Setups page:
+* [Browse All General Raw Setups for Future Projects](./raw-setups/README.md)
