@@ -1,104 +1,174 @@
 ---
 ---
 
+/* Import the baseline layout structural framework */
+@import "jekyll-theme-minimal";
+
 /* ==========================================================================
-   EXPEDITION 33 STYLE UI - UTILITARIAN ENGINEERING THEME
+   CLAIR OBSCUR: EXPEDITION 33 CINEMATIC UI OVERRIDES
    ========================================================================== */
 
-/* 1. Core Layout & High-Contrast Typography */
+/* 1. The Canvas (Velvety Midnight-Oil Contrast) */
 body {
-  background-color: #121416; /* Deep tactical charcoal */
-  color: #E4E7EB;           /* Crisp, high-readability off-white */
-  font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
-  line-height: 1.6;
+  background-color: #0B0C0E !important; /* Pure cinematic obsidian pitch black */
+  color: #E2DCD3 !important;           /* Luxurious, high-contrast Belle Époque ivory */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* Clean modern serif/sans baseline */
+  letter-spacing: 0.02em !important;
+  line-height: 1.7 !important;
 }
 
-/* 2. Instrument-Style Section Headers */
+/* 2. Main Container Constraint */
+.wrapper {
+  background-color: #0B0C0E !important;
+  max-width: 850px !important;
+  padding: 40px 20px !important;
+}
+
+/* 3. The Left Sidebar (Fine Horology Details) */
+header {
+  border-right: 1px solid rgba(226, 220, 211, 0.1) !important; /* Delicate structural boundary line */
+  padding-right: 40px !important;
+
+  h1 a {
+    color: #FFFFFF !important;
+    font-weight: 300 !important; /* Clean, lightweight premium branding */
+    text-transform: uppercase !important;
+    letter-spacing: 0.25em !important; /* Expansive UI typography */
+    font-size: 1.6rem !important;
+  }
+
+  p {
+    color: #8C867E !important; /* Muted stone grey subtitle text */
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15em !important;
+    margin-top: 10px !important;
+  }
+}
+
+/* 4. Elegant Mechanical Headers */
 h1, h2, h3, h4 {
-  color: #F5A623;           /* Chronograph instrument orange accent */
-  border-bottom: 1px solid #2D343C;
-  padding-bottom: 0.3em;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-top: 1.5em;
+  color: #FFFFFF !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.18em !important;
+  border-bottom: 1px solid rgba(226, 220, 211, 0.15) !important;
+  padding-bottom: 0.4em !important;
+  margin-top: 2.2em !important;
 }
 
 h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  border-bottom: 2px solid #F5A623;
+  font-size: 1.75rem !important;
+  border-bottom: 1px solid #E2DCD3 !important; /* Crisp Ivory underline highlight */
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.2rem !important;
+  color: #E2DCD3 !important;
 }
 
-/* 3. Navigation Links & Telemetry Anchors */
+/* 5. Fluid Interaction Anchors (Chronograph Accents) */
 a {
-  color: #38BDF8;           /* Altimeter / display panel blue */
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  color: #C5A880 !important; /* Sophisticated watchmaker gold/champagne tone */
+  text-decoration: none !important;
+  letter-spacing: 0.05em !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: inline-block;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #F5A623;         /* Highlights orange on hover */
+  color: #FFFFFF !important; 
+  transform: translateX(3px); /* Subtle tactical UI slide effect on hover */
 }
 
-/* 4. Code Blocks & Terminal Diagnostic Logs */
+/* 6. Refined Technical Monospace Code Logs */
 code {
-  font-family: monospace;
-  background-color: #1A1D21;
-  color: #4ADE80;           /* Night-vision diagnostic green text */
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  border: 1px solid #2D343C;
-  font-size: 0.9em;
+  font-family: "SF Mono", Consolas, monospace !important;
+  background-color: #121417 !important; /* Isolated contrasting dark slate */
+  color: #E2DCD3 !important;
+  padding: 0.2em 0.5em !important;
+  border-radius: 3px !important;
+  border: 1px solid rgba(226, 220, 211, 0.1) !important;
+  font-size: 0.85em !important;
 }
 
 pre {
-  background-color: #1A1D21;
-  border: 1px solid #2D343C;
-  border-radius: 6px;
-  padding: 15px;
-  overflow-x: auto;
+  background-color: #121417 !important;
+  border: 1px solid rgba(226, 220, 211, 0.1) !important;
+  border-radius: 4px !important;
+  padding: 18px !important;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
+
+  code {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 0.9em !important;
+    color: #E2DCD3 !important;
+  }
 }
 
-pre code {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  color: #4ADE80;
-  font-size: 0.95em;
+/* 7. Fine UI Structural Accents */
+.section-divider {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 2rem 0;
+  color: #8C867E;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  
+  &::after {
+    content: "";
+    flex: 1;
+    margin-left: 1.5rem;
+    border-bottom: 1px solid rgba(226, 220, 211, 0.08);
+  }
 }
 
-/* 5. Lists & Structural Elements */
-ul, ol {
-  padding-left: 20px;
-  margin-bottom: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-strong {
-  color: #FFFFFF;           /* Maximum contrast for bold metrics */
-  font-weight: 600;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: #2D343C;
-  margin: 2em 0;
+.tech-note {
+  background-color: #121417 !important;
+  border: 1px solid rgba(226, 220, 211, 0.1) !important;
+  border-left: 2px solid #C5A880 !important; /* Premium gold accent bar */
+  padding: 20px;
+  border-radius: 4px;
+  margin: 2.5rem 0;
+  
+  .note-label {
+    color: #C5A880;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  
+  p {
+    margin: 0 !important;
+    font-size: 0.85rem;
+    color: #8C867E;
+  }
 }
 
 blockquote {
-  border-left: 4px solid #F5A623;
-  background-color: #1A1D21;
-  margin: 1.5em 0;
-  padding: 10px 20px;
-  color: #9AA2AC;           /* Muted readout gray for notes */
+  border-left: 2px solid #E2DCD3 !important;
+  background-color: #121417 !important;
+  margin: 2e 0 !important;
+  padding: 15px 20px !important;
+  color: #8C867E !important;
+  font-style: italic;
+}
+
+ul, ol {
+  padding-left: 24px !important;
+}
+
+li {
+  margin-bottom: 0.6em !important;
+}
+
+strong {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
 }

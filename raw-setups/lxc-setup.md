@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Proxmox LXC Setup"
+---
+
 # Linux Container (LXC) Deployment on Proxmox
 
 ## Template Downloading

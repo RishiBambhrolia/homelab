@@ -1,3 +1,8 @@
+---
+layout: default
+title: "WireGuard Setup"
+---
+
 # Native WireGuard VPN Gateway Setup
 
 ## Service Installation
