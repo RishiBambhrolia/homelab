@@ -36,4 +36,4 @@ To allow inbound external handshakes to reach the WireGuard server LXC container
 ## Infrastructure Verification
 Log into the WireGuard container and run `wg show` to verify active connection timers and real-time data handshakes.
 
-[← Back to Projects Index](../../projects/)
+[← Back to Projects Index](https://rishibambhrolia.github.io/homelab/projects/)

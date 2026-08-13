@@ -20,4 +20,4 @@ title: "WireGuard Setup"
 * **Mobile Devices:** Scan the generated terminal QR code via the WireGuard mobile app. Test functionality by disabling Wi-Fi and checking the active handshake timer (`wg show`).
 * **PC Devices:** Use `cat profile_name.conf` to display the config, copy it, and paste it into "Add Empty Tunnel" inside the desktop WireGuard app. Adjust the **AllowedIPs** line to specify your exact home network subnet and VPN pool ranges.
 
-[← Back to Raw Setups Index](./)
+[← Back to Raw Setups Index](https://rishibambhrolia.github.io/homelab/raw-setups/)
