@@ -10,5 +10,3 @@ Welcome to my active projects. Please select a project below to view the archite
 ## Available Case Studies
 * [Network Gateway: Remote Access VPN & Centralized DNS](./network-gateway/README.md)
 <!-- Future projects will go right here as a clean list! -->
-
-[← Back to Main Homepage](../)
